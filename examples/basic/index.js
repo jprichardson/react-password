@@ -19,7 +19,7 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <ReactPassword ref="password" value='super secret' revealed={ this.state.checked } maxLength="25" onChange={ this.handlePasswordChange } id="secret-password"/>
+        <ReactPassword ref='password' value='super secret' revealed={ this.state.checked } maxLength='25' onChange={ this.handlePasswordChange } id='secret-password'/>
         <br/>
         <input type='checkbox' onChange= { this.handleCheckChange } checked={ this.state.checked ? 'checked' : null } />
         Reveal password.

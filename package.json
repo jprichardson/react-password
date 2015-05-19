@@ -1,6 +1,6 @@
 {
   "name": "react-password",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A React.js component for password inputs.",
   "main": "lib/react-password.js",
   "scripts": {

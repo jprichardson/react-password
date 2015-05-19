@@ -4,7 +4,7 @@
   "description": "A React.js component for password inputs.",
   "main": "lib/react-password.js",
   "scripts": {
-    "build-examples": "browserify -t reactify examples/basic/index.js -o examples/basic/bundle.js",
+    "build-examples": "browserify -t [ ./node_modules/reactify --es6 ] examples/basic/index.js -o examples/basic/bundle.js",
     "test": "standard && mocha"
   },
   "repository": {

@@ -4,7 +4,7 @@
   "description": "A React.js component for password inputs.",
   "main": "lib/react-password.js",
   "scripts": {
-    "build-examples": "browserify -t [ ./node_modules/reactify --es6 ] examples/basic/index.js -o examples/basic/bundle.js",
+    "build-examples": "browserify -t babelify examples/basic/index.js -o examples/basic/bundle.js",
     "test": "mocha --compilers .:test/jsx-compiler.js"
   },
   "repository": {
@@ -25,14 +25,23 @@
   "bugs": {
     "url": "https://github.com/jprichardson/react-password/issues"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "homepage": "https://github.com/jprichardson/react-password",
   "devDependencies": {
-    "browserify": "^10.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "install": "^0.3.0",
     "jsdom": "^3.1.2",
     "mocha": "2.x",
     "react": "^0.13.3",
     "react-tools": "^0.13.3",
-    "reactify": "^1.1.1",
     "standard": "3.x"
   },
   "peerDependencies": {
